@@ -279,7 +279,7 @@ nav img,
   /* Job Search Page */
 
  main {
-    height: calc(100vh - 66px);
+    min-height: calc(100vh - 66px);
     background: url('../images/jobSearch.png');
     background-size: cover;
     padding: 0;

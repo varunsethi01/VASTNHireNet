@@ -1,8 +1,8 @@
 // Defining styles
 let candidate = `display: inline-block;
 flex-direction: column;
-width: 40vw;
-height: 26vh;
+width: 80vw;
+min-height: 26vh;
 background: #f2f2f2;
 justify-content: space-around;
 margin: 20px 4vw;
@@ -10,7 +10,9 @@ border: 2px solid #000;`
 
 let flex =`display: flex;
 justify-content: space-around;
-align-items: center;`;
+align-items: center;
+`;
+
 
 let image = `
 height: 40px;
@@ -70,6 +72,11 @@ function searchCandidate() {
         .then( data => {
             console.log(data);
             document.write(nav);
+            if(data.length === 0 ) {
+                html += `<h2> No Such Data Found!! </h2>`;
+                document.write(html);
+                return;
+            }
             for (let i = 0; i < data.length; i++) {
                 html += `
                 <section style="${candidate}">
@@ -98,6 +105,11 @@ function searchCandidate() {
         .then( data => {
             console.log(data);
             document.write(nav);
+            if(data.length === 0 ) {
+                html += `<h2> No Such Data Found!! </h2>`;
+                document.write(html);
+                return;
+            }
             for (let i = 0; i < data.length; i++) {
                 html += `
                 <section style="${candidate}">
@@ -127,6 +139,11 @@ function searchCandidate() {
         .then( data => {
             console.log(data);
             document.write(nav);
+            if(data.length === 0 ) {
+                html += `<h2> No Such Data Found!! </h2>`;
+                document.write(html);
+                return;
+            }
             for (let i = 0; i < data.length; i++) {
                 html += `
          <section style="${candidate}">
