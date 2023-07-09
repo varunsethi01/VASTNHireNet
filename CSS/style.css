@@ -316,6 +316,7 @@ nav img,
 
     .boards {
         flex-direction: column;
+        margin-top: -8vh;
     }
 
     .hero h2 {
