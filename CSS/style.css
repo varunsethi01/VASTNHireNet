@@ -1,0 +1,304 @@
+:root {
+    --color-primary: #4287F0;
+    --color-secondary: #FF814B;
+}
+
+
+/* Index Page */
+
+/* NAV BAR */
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+nav img,
+.registration img {
+ height: 60px;
+ width: 60px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    letter-spacing: 2px;
+    background: url('../images/heroBg.jpg') no-repeat center center ;
+    height: 85vh;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(27, 27, 27, 0.8);
+    background-size: cover;
+    text-align: center;
+  }
+
+  .hero h2 {
+    margin: 0;
+    padding-top: 30vh;
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    background: var(--color-primary);
+    padding: 20px 25px;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+  }
+
+  .register:hover {
+    background: #000;
+    font-weight: bold;
+  }
+
+  /* Boards */
+  .boards {
+    display: flex;
+    margin: auto;
+    margin-top: -9vh;
+    justify-content: space-evenly;
+  }
+
+  .board {
+    width: 24vw;
+    text-align: center;
+    border: 1px solid #444;
+    border-top: 0;
+}
+
+.board--heading {
+    background: rgba(255, 255, 255, .6);
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: background .3s ease-out;
+}
+
+.board--heading:hover {
+    background: var(--color-secondary);
+}
+
+.board--body {
+    margin-bottom: 6px;
+    padding: 4px;
+  }
+
+  .board_btn {
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: color .3s;
+  }
+
+  .board_btn:hover {
+    color: var(--color-secondary);
+  }
+
+
+  /* Data Section */
+  .data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+    background: url('../images/data-image.jpg') no-repeat center center ;
+    height: 160px;
+    box-shadow: inset 0 0 0 1000px rgba(232, 231, 231, 0.4);
+    background-size: cover;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .data i {
+    font-size: 4rem;
+  }
+
+  .data--numbers {
+    display: flex;
+    align-items: center;
+  }
+
+  .data--number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  /* Callout */
+  .callout {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    background: var(--color-secondary);
+    margin: 20px 0 0 0;
+  }
+
+  .callout_btn {
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: white;
+    color: #000;
+  }
+
+  .callout_btn:hover {
+    color: white;
+    background: #000;
+  }
+
+  /* Footer */
+  .footer {
+    background: #333;
+  }
+
+  .links {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  ul {
+    list-style-type: none;
+    color: #fff;
+  }
+
+  ul > a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social--links {
+    display: flex;
+  }
+
+  .social--links i {
+    margin: 0 0 6px 8px;
+    padding: 10px;
+  }
+
+  .footer p {
+    color: #fff;
+    text-align: right;
+    margin: 0 10px 0 0;
+  }
+
+
+  /* Registration Page */
+
+
+  .registration {
+    background: #f2f2f2;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  form {
+    padding-top: 20px;
+    min-height: calc(100vh - 20px);
+    background: white;
+    width: 30vw;
+    margin-left: 35vw;
+    box-shadow: Inset 0 1px 25px rgba(0, 0, 0, 0.55);
+  }
+
+  .input {
+    width: 70%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #222;
+    margin: 10px;
+    padding: 15px 5px 10px 20px;
+    box-shadow: Inset 0 1px 25px rgba(0, 0, 0, 0.55);
+    border-radius: 25px;
+  }
+  
+  .input:focus {
+    border: 2px solid #c3c6ce;
+  }
+
+  select.input {
+    width: 80%;
+  }
+  
+  .input::placeholder {
+    color: #555;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus::placeholder {
+    color: #999;
+  }
+
+  .signUp_btn {
+    padding: 12px 24px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: var(--color-secondary);
+  }
+
+  .signUp_btn:hover {
+    background: #000;
+  }
+
+  form p {
+    padding-bottom: 10px;
+  }
+
+/* Login */
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+  /* Job Search Page */
+
+ main {
+    height: calc(100vh - 66px);
+    background: url('../images/jobSearch.png');
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    color: white;
+ }
+
+ main h2 {
+    margin: 0;
+    padding-top: 30vh;
+ }
+
+ main input.input {
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+ }
+
+ main input.input::placeholder {
+    color: var(--color-secondary);
+ }
