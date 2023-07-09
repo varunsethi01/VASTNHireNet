@@ -120,7 +120,7 @@ nav img,
     flex-wrap: wrap;
     letter-spacing: 2px;
     background: url('../images/data-image.jpg') no-repeat center center ;
-    height: 160px;
+    min-height: 160px;
     box-shadow: inset 0 0 0 1000px rgba(232, 231, 231, 0.4);
     background-size: cover;
     text-align: center;
@@ -145,11 +145,12 @@ nav img,
   /* Callout */
   .callout {
     width: 100vw;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: space-around;
     color: white;
     align-items: center;
+    flex-wrap: wrap;
     background: var(--color-secondary);
     margin: 20px 0 0 0;
   }
@@ -297,8 +298,53 @@ nav img,
     width: 30%;
     display: block;
     margin: 10px auto;
+    color: #fff;
  }
 
  main input.input::placeholder {
     color: var(--color-secondary);
+ }
+
+ /* Media Queries */
+ @media screen and (max-width: 768px) {
+    .board {
+        width: 28vw;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+
+    .boards {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        padding: 30vh 6px 6px 6px;
+    }
+
+    .board--heading {
+        margin: 0;
+        background: rgba(0, 0, 0, .2);
+    }
+
+    .board {
+        width: 98vw;
+    }
+
+    form {
+        width: 100vw;
+        margin: 0;
+    }
+
+    main h2,
+    main p {
+        padding: 30vh 6px 6px 6px;
+    }
+    main p {
+        padding-top: 6px;
+    }
+
+    main input.input {
+        width: 80%;
+    }
  }
