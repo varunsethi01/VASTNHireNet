@@ -316,7 +316,7 @@ nav img,
 
     .boards {
         flex-direction: column;
-        margin-top: -8vh;
+        margin-top: -7vh;
     }
 
     .hero h2 {
@@ -326,6 +326,7 @@ nav img,
     .board--heading {
         margin: 0;
         background: rgba(0, 0, 0, .2);
+        padding: 0;
     }
 
     .board {
